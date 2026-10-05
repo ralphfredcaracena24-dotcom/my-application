@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Application</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ac9f9f;
+            text-align: center;
+        }
+
+        header {
+            background-color: #222;
+            color: white;   
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .container {
+            background-color: khaki;
+            width: 80%;
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px gray;
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 8px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+        img {
+            width: 200px;
+            margin: 15px;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 15px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Application</h1>
+        <p>Welcome to my website!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#login">Login</a>
+    
+    </nav>
+
+    <!-- HOME -->
+    <div class="container" id="home">
+        <h2>Welcome!</h2>
+
+        <p>
+            This is my application website.
+            You can use this website to access my application.
+        </p>
+
+        <button onclick="alert('Welcome to my application!')">
+            Get Started
+        </button>
+    </div>
+
+    <!-- LOGIN -->
+    <div class="container" id="login">
+        <h2>Login</h2>
+
+        <input type="text" placeholder="Username">
+        <br>
+
+        <input type="password" placeholder="Password">
+        <br><br>
+<a href="final.html">
+        <button onclick="login()">
+            Login
+        </button>
+        </a> 
+    </div>
+
+   
+
+    <footer>
+        <p>RALPH APPLICATION</p>
+    </footer>
+
+    <script>
+        function login() {
+            alert("Are you sure to go this website?");
+        }
+    </script>
+
+</body>
+</html>
